@@ -9,19 +9,15 @@ body {
   background: #fbfdfd;
 }
 
-.hero {
-  background-image: url(./images/hero.png);
-}
-
 .btn {
-  padding: 16px 40px;
+  padding: 12px 18px;
   border-radius: 8px;
   background: #0b63e5;
   color: #fff;
   font-family: "Manrope", sans-seri;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  /* line-height: 15px; */
   letter-spacing: 4.8px;
   outline: none;
   border: none;
