@@ -44,7 +44,7 @@ export default function App() {
 
         {/* nav */}
 
-        <div className="fixed left-[15%] top-4 flex justify-between items-center bg-white p-2 rounded-xl w-[70%] z-20">
+        <div className="hidden md:flex fixed max-w-[90%] md:max-w-[80%] left-1/2 -translate-x-1/2 top-4 gap-5 justify-between whitespace-nowrap items-center bg-white px-5 rounded-xl z-20">
           <div className="flex gap-2 justify-center items-center ">
             <img src={Logo2} alt="logo" className="w-5 h-5" />
             <p className="text-gray-700 text-sm capitalize font-medium">
@@ -54,12 +54,14 @@ export default function App() {
 
           <div>
             <ul className="flex gap-5 justify-center items-center capitalize text-xs font-medium">
-              <li className="text-[#0b63e5] border-b border-[#0b63e5]">home</li>
-              <li className="text-[#838E9E]">portfolio</li>
-              <li className="text-[#838E9E]">service</li>
-              <li className="text-[#838E9E]">testimonial</li>
-              <li className="text-[#838E9E]">pricing plan</li>
-              <li className="text-[#838E9E]">FAQs</li>
+              <li className="text-[#0b63e5] border-b border-[#0b63e5] py-4">
+                home
+              </li>
+              <li className="text-[#838E9E] py-4">portfolio</li>
+              <li className="text-[#838E9E] py-4">service</li>
+              <li className="text-[#838E9E] py-4">testimonial</li>
+              <li className="text-[#838E9E] py-4">pricing plan</li>
+              <li className="text-[#838E9E] py-4">FAQs</li>
             </ul>
           </div>
           <div>
@@ -395,8 +397,8 @@ export default function App() {
       {/* footer */}
 
       <div className="flex justify-between items-center  min-h-[100px] bg-white pt-14">
-        <div className="flex mx-0 w-full">
-          <div className="py-11  pl-20 pr-9 bg-[#FFD27A] w-[45%]">
+        <div className="flex mx-0 w-full flex-col lg:flex-row">
+          <div className="py-11 pl-5 lg:pl-20 pr-9 bg-[#FFD27A] lg:w-[45%] order-last lg:order-first">
             <h4 className="tracking-tight text-[#061C3D] max-w-[55%] text-2xl font-bold mb-2">
               Have a project idea! Let work together.
             </h4>
@@ -407,9 +409,9 @@ export default function App() {
             <button className="btn !tracking-normal !bg-[#031939] !text-[#FFC759] !text-sm capitalize mb-4 !py-1">
               get a quote
             </button>
-            <p className="border-t border-gray-500"></p>
+            <hr className="border-slate-600 mx-auto" />
 
-            <h4 className="mt-4 text-base font-bold text-[#061C3D] mb-2 max-w-[55%]  pt-9 ">
+            <h4 className="mt-4 text-base font-bold text-[#061C3D] mb-2 max-w-[55%] pt-9">
               Join our team. We're open to hire creative people!
             </h4>
             <button className="py-1 px-4 rounded-md bg-transparent outline-none text-xs font-bold border border-gray-900 capitalize text-[#061C3D]">
@@ -417,7 +419,7 @@ export default function App() {
             </button>
           </div>
 
-          <div className="pl-9 pr-20 py-11 bg-[#031939] w-[55%]">
+          <div className="pl-9 pr-20 py-11 bg-[#031939] lg:w-[55%] order-first lg:order-last">
             <div className="flex justify-between items-center border-b border-gray-600 mb-5 pb-7">
               <div className="flex gap-2 justify-center items-center ">
                 <img src={Logo} alt="logo" className="w-5 h-5" />
@@ -426,7 +428,7 @@ export default function App() {
                 </p>
               </div>
               <div>
-                <ul className="flex gap-3 justify-center items-center">
+                <ul className="flex flex-wrap gap-3 justify-center items-center">
                   <li className="p-1 rounded-sm bg-gray-600">
                     <svg className="w-[10px] h-[10px] flex justify-center items-center">
                       <use xlinkHref={`${Svg}#facebook`}></use>
@@ -451,8 +453,8 @@ export default function App() {
               </div>
             </div>
 
-            <div className="pt-3 flex flex-start gap-24 border-b border-gray-600 pb-5">
-              <div>
+            <div className="pt-3 flex flex-start flex-wrap gap-24 border-b border-gray-600 pb-5">
+              <div className="flex-shrink-0">
                 <h4 className="uppercase text-xs font-normal text-white mb-3">
                   quick links
                 </h4>
@@ -467,7 +469,7 @@ export default function App() {
                 </ul>
               </div>
 
-              <div>
+              <div className="flex-shrink-0">
                 <h4 className="uppercase text-xs font-normal text-white mb-3">
                   services
                 </h4>
@@ -480,7 +482,7 @@ export default function App() {
                 </ul>
               </div>
 
-              <div>
+              <div className="flex-shrink-0">
                 <h4 className="uppercase text-xs font-normal text-white mb-3">
                   product
                 </h4>
