@@ -1,6 +1,8 @@
 import React from "react";
 // import "./App.css";
 import Svg from "./images/sprite.svg";
+import Logo from "./images/logo-icon.svg";
+import Logo2 from "./images/logo-icon2.svg";
 import Doctor from "./images/doctor-touching.png";
 import Team from "./images/working-team.png";
 import Devon from "./images/devon-lane.png";
@@ -11,6 +13,11 @@ import Hero from "./images/hero.png";
 import Itondo from "./images/itondo.svg";
 import Cha from "./images/ji-hun.svg";
 import Bran from "./images/brannan.svg";
+import Hexa from "./images/Hexa Logo.svg";
+import Techhouse from "./images/Tech Logo.svg";
+import Realestate from "./images/Real Estate Logo.svg";
+import Realestatewhite from "./images/Real Estatewhite Logo.svg";
+import Realestatepointed from "./images/Real Estatepointed Logo.svg";
 
 export default function App() {
   return (
@@ -31,6 +38,33 @@ export default function App() {
 
             <button className="btn max-sm:!text-[14px] max-sm:!tracking-none max-sm:!px-2.5 max-sm:!py-1.5">
               Know More
+            </button>
+          </div>
+        </div>
+
+        {/* nav */}
+
+        <div className="fixed left-[15%] top-4 flex justify-between items-center bg-white p-2 rounded-xl w-[70%] z-20">
+          <div className="flex gap-2 justify-center items-center ">
+            <img src={Logo2} alt="logo" className="w-5 h-5" />
+            <p className="text-gray-700 text-sm capitalize font-medium">
+              golio
+            </p>
+          </div>
+
+          <div>
+            <ul className="flex gap-5 justify-center items-center capitalize text-xs font-medium">
+              <li className="text-[#0b63e5] border-b border-[#0b63e5]">home</li>
+              <li className="text-[#838E9E]">portfolio</li>
+              <li className="text-[#838E9E]">service</li>
+              <li className="text-[#838E9E]">testimonial</li>
+              <li className="text-[#838E9E]">pricing plan</li>
+              <li className="text-[#838E9E]">FAQs</li>
+            </ul>
+          </div>
+          <div>
+            <button className="btn !py-1 !font-medium !tracking-normal">
+              contact us
             </button>
           </div>
         </div>
@@ -249,7 +283,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="py-36">
+      <div className="pt-36">
         <div className="container mx-auto p-5">
           <div className="flex justify-center items-center text-center gap-[16px] mb-5">
             <svg className="w-[50px] h-[10px] fill-[#0B63E5]">
@@ -303,25 +337,166 @@ export default function App() {
 
         <div className="bg-white py-6 mx-12 mt-11 mb-10">
           <div className="container mx-auto">
-            <div className="bg-[#F6F9FD] mx-12 rounded-xl p-5">
-              <h2 className="text-[#002966] text-[18px] font-medium leading-[24px] mb-2">
+            <div className="overflow-hidden bg-[#F6F9FD] lg:mx-12 rounded-xl p-5 relative after:hidden md:after:block after:absolute after:-right-[230px] after:inset-y-0 after:w-2/4 after:z-[1] after:bg-[repeating-linear-gradient(#1975FF80_0px,_gray_2px,_transparent_2px,_transparent_15px)] after:-rotate-[60deg]">
+              <h2 className="text-[#002966] text-[18px] font-medium leading-[24px] mb-2 max-w-sm">
                 Enter your e-mail address and get started for free
               </h2>
 
-              <p className="text-[12px] text-[#002966]/9 font-medium">
+              <p className="text-[12px] text-[#002966]/9 font-medium max-w-sm">
                 Stay up to date with the most relevant information, our new
                 collections, news and special offers!
               </p>
-              <div className="flex gap-[8px] mt-5">
+              <div className="flex flex-wrap gap-2 mt-5">
                 <input
                   type="text"
                   placeholder="Your email address"
-                  className="border rounded-xl bg-white p-3"
+                  className="border rounded-xl bg-white px-2 py-1.5 text-[14px] outline-none flex-1 max-w-[260px]"
                 />
 
-                <button className="btn py-[5px] px-[8px]">Subscribe</button>
+                <button className="btn !py-1 text-[11px] !tracking-normal">
+                  Subscribe
+                </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center h-[150px] px-5">
+        <div class="flex gap-10 mx-auto max-md:overflow-x-auto">
+          <img
+            src={Hexa}
+            alt="hexa"
+            className="w-32 align-text-bottom h-[70px]"
+          />
+          <img
+            src={Techhouse}
+            alt="hexa"
+            className="w-32 align-text-bottom h-[70px]"
+          />
+          <img
+            src={Realestate}
+            alt="hexa"
+            className="w-32 align-text-bottom h-[70px]"
+          />
+          <img
+            src={Realestatewhite}
+            alt="hexa"
+            className="w-32 align-text-bottom h-[70px]"
+          />
+          <img
+            src={Realestatepointed}
+            alt="hexa"
+            className="w-32 align-text-bottom h-[70px]"
+          />
+        </div>
+      </div>
+
+      {/* footer */}
+
+      <div className="flex justify-between items-center  min-h-[100px] bg-white pt-14">
+        <div className="flex mx-0 w-full">
+          <div className="py-11  pl-20 pr-9 bg-[#FFD27A] w-[45%]">
+            <h4 className="tracking-tight text-[#061C3D] max-w-[55%] text-2xl font-bold mb-2">
+              Have a project idea! Let work together.
+            </h4>
+            <p className="text-sm max-w-[85%] font-medium text-gray-900 mb-2">
+              Nunc vel metus cursus, tempor ipsum sit amet, rutrum justo.
+              Maecenas tincidunt imperdiet magna, et porta libero eleifend vel.{" "}
+            </p>
+            <button className="btn !tracking-normal !bg-[#031939] !text-[#FFC759] !text-sm capitalize mb-4 !py-1">
+              get a quote
+            </button>
+            <p className="border-t border-gray-500"></p>
+
+            <h4 className="mt-4 text-base font-bold text-[#061C3D] mb-2 max-w-[55%]  pt-9 ">
+              Join our team. We're open to hire creative people!
+            </h4>
+            <button className="py-1 px-4 rounded-md bg-transparent outline-none text-xs font-bold border border-gray-900 capitalize text-[#061C3D]">
+              view open position
+            </button>
+          </div>
+
+          <div className="pl-9 pr-20 py-11 bg-[#031939] w-[55%]">
+            <div className="flex justify-between items-center border-b border-gray-600 mb-5 pb-7">
+              <div className="flex gap-2 justify-center items-center ">
+                <img src={Logo} alt="logo" className="w-5 h-5" />
+                <p className="text-white text-sm capitalize font-medium">
+                  golio
+                </p>
+              </div>
+              <div>
+                <ul className="flex gap-3 justify-center items-center">
+                  <li className="p-1 rounded-sm bg-gray-600">
+                    <svg className="w-[10px] h-[10px] flex justify-center items-center">
+                      <use xlinkHref={`${Svg}#facebook`}></use>
+                    </svg>
+                  </li>
+                  <li className="p-1 rounded-sm bg-gray-600">
+                    <svg className="w-[10px] h-[10px] flex justify-center items-center">
+                      <use xlinkHref={`${Svg}#twitter`}></use>
+                    </svg>
+                  </li>
+                  <li className="p-1 rounded-sm bg-gray-600">
+                    <svg className="w-[10px] h-[10px] flex justify-center items-center">
+                      <use xlinkHref={`${Svg}#linkedIn`}></use>
+                    </svg>
+                  </li>
+                  <li className="p-1 rounded-sm bg-gray-600">
+                    <svg className="w-[10px] h-[10px] flex justify-center items-center">
+                      <use xlinkHref={`${Svg}#instagram`}></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="pt-3 flex flex-start gap-24 border-b border-gray-600 pb-5">
+              <div>
+                <h4 className="uppercase text-xs font-normal text-white mb-3">
+                  quick links
+                </h4>
+                <ul className="capitalize text-xs font-sm">
+                  <li className="text-white mb-2">
+                    <span>&mdash;</span> portfolio
+                  </li>
+                  <li className="text-[#838E9E] mb-2">about</li>
+                  <li className="text-[#838E9E] mb-2">services</li>
+                  <li className="text-[#838E9E] mb-2">pricing plans</li>
+                  <li className="text-[#838E9E]">contact</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="uppercase text-xs font-normal text-white mb-3">
+                  services
+                </h4>
+                <ul className="capitalize text-xs font-sm">
+                  <li className="text-[#838E9E] mb-2">UI/UX Design</li>
+                  <li className="text-[#838E9E] mb-2">branding</li>
+                  <li className="text-[#838E9E] mb-2">ilustration</li>
+                  <li className="text-[#838E9E] mb-2">design concept</li>
+                  <li className="text-[#838E9E]">app design</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="uppercase text-xs font-normal text-white mb-3">
+                  product
+                </h4>
+                <ul className="capitalize text-xs font-sm">
+                  <li className="text-[#838E9E] mb-2">figma</li>
+                  <li className="text-[#838E9E] mb-2">adobe</li>
+                  <li className="text-[#838E9E] mb-2">dribble</li>
+                  <li className="text-[#838E9E] mb-2">behance</li>
+                  <li className="text-[#838E9E]">themeforest</li>
+                </ul>
+              </div>
+            </div>
+
+            <p className="text-[#838E9E] text-xs text-center mt-2">
+              © 2021 &ndash; Golio UI Kit
+            </p>
           </div>
         </div>
       </div>
